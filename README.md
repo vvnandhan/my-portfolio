@@ -10,7 +10,7 @@ Showcases 3D animations, a timeline-style Experience section, Projects gallery, 
 - **Hero** section with animated 3D spaceman (React Three Fiber & Drei)  
 - **About** section with interactive timeline and project listings  
 - **Contact** section with profile photo, resume download, and Formspree-powered form  
-- Fully responsive layout — desktop, tablet & mobile  
+- Fully responsive layout — desktop 
 - Easy deployment to Vercel or Netlify  
 
 ---
@@ -19,7 +19,7 @@ Showcases 3D animations, a timeline-style Experience section, Projects gallery, 
 
 - **Framework**: React 18 + Vite  
 - **3D & Animation**: @react-three/fiber, @react-three/drei, Framer Motion  
-- **Styling**: Custom CSS (no Tailwind)  
+- **Styling**: Custom CSS
 - **Forms**: Formspree  
 - **Hosting**: Vercel / Netlify  
 - **Version Control**: Git & GitHub  
