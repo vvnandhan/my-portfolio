@@ -1,0 +1,146 @@
+/* === src/sections/Contact.css === */
+
+/* global box‐sizing */
+.contact-section,
+.contact-section * {
+  box-sizing: border-box;
+}
+
+/* SECTION WRAPPER */
+.contact-section {
+  background: #000000; /* updated per your request */
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+/* inner two‐column layout */
+.contact-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* LEFT COLUMN */
+.contact-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2ac7ff;
+  margin-bottom: 1.25rem;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #2ac7ff;
+  color: #000;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #1bb0dd;
+  transform: translateY(-2px);
+}
+
+/* vertical divider */
+/* .contact-divider {
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  align-self: stretch;
+} */
+
+/* RIGHT COLUMN (FORM) */
+.contact-right {
+  width: 60%;
+}
+
+/* form container */
+.contact-form {
+  background: #1a1a1a;          /* slightly lighter than #030101 */
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* labels + fields */
+.contact-form label {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  color: #ddd;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  background: #111;             /* dark but above section bg */
+  color: #fff;
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2ac7ff;
+  outline: none;
+}
+
+.send-btn {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+  .contact-divider {
+    display: none;
+  }
+  .send-btn {
+    align-self: stretch;
+    text-align: center;
+  }
+}

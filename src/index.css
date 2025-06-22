@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.avatar-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35vw;
+  height: 72vh;
+  min-width: 280px;
+  max-width: 530px;
+  min-height: 340px;
+  max-height: 680px;
+  transform: translate(-50%, -54%);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.hash-span {
+  margin-top: -100px;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+  0%, 100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.5),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.7),
+      1.8em -1.8em 0 0em #ffffff,
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.5),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.7),
+      2.5em 0em 0 0em #ffffff,
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.5),
+      2.5em 0em 0 0em rgba(255,255,255,0.7),
+      1.75em 1.75em 0 0em #ffffff,
+      0em 2.5em 0 0em rgba(255,255,255,0.2),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.5),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.7),
+      0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.2),
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.5),
+      0em 2.5em 0 0em rgba(255,255,255,0.7),
+      -1.8em 1.8em 0 0em #ffffff,
+      -2.6em 0em 0 0em rgba(255,255,255,0.2),
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.5),
+      -1.8em 1.8em 0 0em rgba(255,255,255,0.7),
+      -2.6em 0em 0 0em #ffffff,
+      -1.8em -1.8em 0 0em rgba(255,255,255,0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255,255,255,0.2),
+      1.8em -1.8em 0 0em rgba(255,255,255,0.2),
+      2.5em 0em 0 0em rgba(255,255,255,0.2),
+      1.75em 1.75em 0 0em rgba(255,255,255,0.2),
+      0em 2.5em 0 0em rgba(255,255,255,0.5),
+      -2.6em 0em 0 0em rgba(255,255,255,0.7),
+      -1.8em -1.8em 0 0em #ffffff;
+  }
+}
+
+.navbar-bg {
+  background: rgba(0,0,0,0.75);  /* 75% black, semi-transparent */
+  backdrop-filter: blur(4px);    /* subtle glass effect */
+  height: 52px;
+  width: 100%;
+  box-shadow: 0 2px 14px 0 #000d;
+  border-bottom: 1.5px solid #232323;
+  position: fixed;
+  top: 0; left: 0; z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  font-family: 'Inter', 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #f2f3f6;
+  letter-spacing: 0.01em;
+  padding: 4px 18px 4px 18px;
+  border-radius: 7px;
+  text-decoration: none;
+  background: transparent;
+  transition: color 0.13s, background 0.13s;
+  outline: none;
+  /* Underline effect */
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 19%;
+  bottom: 0px;
+  width: 62%;
+  height: 2.2px;
+  background: #fff;
+  border-radius: 1.5px;
+  opacity: 0;
+  transform: scaleX(0.68);
+  transition: opacity 0.18s, transform 0.19s;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background: transparent;
+}
+.nav-link:active {
+  color: #62e7f7;
+}
+
+/* Hamburger for mobile only */
+@media (min-width: 768px) {
+  nav .hamburger {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-bg { height: 44px; min-height: 40px; }
+  nav ul { display: none !important; }
+  nav .hamburger { display: block !important; }
+}
+
+/* Optional: Animate dot */
+.timeline-dot {
+  animation: glowDot 1.5s infinite alternate;
+}
+@keyframes glowDot {
+  0% { box-shadow: 0 0 0 0 #fff8; }
+  100% { box-shadow: 0 0 14px 2px #fff5; }
+}
+
+
