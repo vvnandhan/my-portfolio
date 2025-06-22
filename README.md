@@ -1,16 +1,84 @@
-<<<<<<< HEAD
-# my-portfolio
-=======
-# React + Vite
+# Vayu Nandhan – Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio built with Vite & React.  
+Showcases 3D animations, a timeline-style Experience section, Projects gallery, and a Contact form with resume download.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Hero** section with animated 3D spaceman (React Three Fiber & Drei)  
+- **About** section with interactive timeline and project listings  
+- **Contact** section with profile photo, resume download, and Formspree-powered form  
+- Fully responsive layout — desktop, tablet & mobile  
+- Easy deployment to Vercel or Netlify  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 2988342 (Initial portfolio)
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: React 18 + Vite  
+- **3D & Animation**: @react-three/fiber, @react-three/drei, Framer Motion  
+- **Styling**: Custom CSS (no Tailwind)  
+- **Forms**: Formspree  
+- **Hosting**: Vercel / Netlify  
+- **Version Control**: Git & GitHub  
+
+---
+
+## 📁 Project Structure
+
+my-portfolio/
+├─ public/
+│ └─ spaceman.glb
+├─ src/
+│ ├─ assets/
+│ │ ├─ about-bg-final.png
+│ │ ├─ background.png
+│ │ ├─ planets.png
+│ │ ├─ profile.jpg
+│ │ └─ stones.png
+│ ├─ components/
+│ │ ├─ Navbar.jsx
+│ │ ├─ ExperienceSection.jsx
+│ │ ├─ ProjectsSection.jsx
+│ │ └─ Subtext.jsx
+│ ├─ sections/
+│ │ ├─ Hero.jsx
+│ │ ├─ About.jsx
+│ │ ├─ About.css
+│ │ ├─ Contact.jsx
+│ │ └─ Contact.css
+│ ├─ App.jsx
+│ ├─ index.css
+│ └─ main.jsx
+├─ package.json
+└─ README.md
+
+
+---
+
+## 🔧 Getting Started
+
+### Prerequisites
+
+- Node.js (v16+) & npm  
+- Git  
+
+### Installation
+
+```bash
+# Clone the repo
+git clone git@github.com:vvnandhan/my-portfolio.git
+cd my-portfolio
+
+# Install dependencies
+npm install
+
+# Start Vite dev server
+npm run dev
+
+npm run build
+
+
+
